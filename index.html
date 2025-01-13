@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 让容器的宽度和高度都充满全屏 */
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-color: pink;
+            /* 弹性盒子模型，盒子放在屏幕中间 */
+            display: flex;
+            /* 摆放方向水平与垂直都进行居中 */
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .heart{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 相对定位 */
+            position: relative;
+            transform: rotate(45deg);
+            animation: heart 0.5s alternate infinite;
+        }
+        .heart::before{
+            content: "";
+            /* 盒子大小相关 */
+            width: 200px;
+            height: 100px;
+            /* 背景颜色相关 */
+            background-color: red;
+            /* 绝对定位相关 */
+            position:absolute;
+            left: 0;
+            top: -99px;
+            /* 圆角的绘制 */
+            border-radius: 100px 100px 0 0;
+        }
+        .heart::after{
+            content: "";
+            width: 100px;
+            height: 200px;
+            background-color: red;
+            position:absolute;
+            left: -99px;
+            top: 0;
+            border-radius: 100px 0 0 100px;
+        }
+        /* 实现动画 */
+        @keyframes heart{
+            0%{
+                transform: rotate(45deg) scale(0.6);
+            }
+            100%{
+                transform: rotate(45deg) scale(1);
+                
+            }
+
+        }
+    </style> -->
+</head>
+<body>
+    <div class="heart">
+    </div>
+</body>
+</html>
